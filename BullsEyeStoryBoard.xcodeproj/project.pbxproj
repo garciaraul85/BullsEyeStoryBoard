@@ -16,6 +16,7 @@
 		F88E7CED24FFDB2F00728D92 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88E7CEC24FFDB2F00728D92 /* AboutViewController.swift */; };
 		F88E7CF1250019D200728D92 /* AboutAuthor.xib in Resources */ = {isa = PBXBuildFile; fileRef = F88E7CF0250019D200728D92 /* AboutAuthor.xib */; };
 		F88E7CF325001CDC00728D92 /* AboutAuthorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88E7CF225001CDC00728D92 /* AboutAuthorController.swift */; };
+		F88E7CF52500303D00728D92 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = F88E7CF42500303D00728D92 /* BullsEye.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F88E7CEC24FFDB2F00728D92 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		F88E7CF0250019D200728D92 /* AboutAuthor.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutAuthor.xib; sourceTree = "<group>"; };
 		F88E7CF225001CDC00728D92 /* AboutAuthorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAuthorController.swift; sourceTree = "<group>"; };
+		F88E7CF42500303D00728D92 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = BullsEye.html; path = Assets.xcassets/BullsEye.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		F88E7CD724FEDE7E00728D92 /* BullsEyeStoryBoard */ = {
 			isa = PBXGroup;
 			children = (
+				F88E7CF42500303D00728D92 /* BullsEye.html */,
 				F88E7CD824FEDE7E00728D92 /* AppDelegate.swift */,
 				F88E7CDA24FEDE7E00728D92 /* SceneDelegate.swift */,
 				F88E7CDC24FEDE7E00728D92 /* ViewController.swift */,
@@ -137,6 +140,7 @@
 				F88E7CE224FEDE8000728D92 /* Assets.xcassets in Resources */,
 				F88E7CF1250019D200728D92 /* AboutAuthor.xib in Resources */,
 				F88E7CE024FEDE7E00728D92 /* Main.storyboard in Resources */,
+				F88E7CF52500303D00728D92 /* BullsEye.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
