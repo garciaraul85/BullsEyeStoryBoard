@@ -83,20 +83,21 @@ class ViewController: UIViewController {
         // Customize slider
         //let thumbImage = UIImage(named: "SliderThumb-Normal")
         // type image literal, hit enter and double click icon to choose image
-        let thumbImage = #imageLiteral(resourceName: "SliderThumb-Normal")
-        slider.setThumbImage(thumbImage, for: .normal)
+        let thumbImageNormal = #imageLiteral(resourceName: "SliderThumb-Normal")
+        slider.setThumbImage(thumbImageNormal, for: .normal)
         
-        let thumbImageHighlited = #imageLiteral(resourceName: "SliderThumb-Highlighted")
-        slider.setThumbImage(thumbImageHighlited, for: .highlighted)
+        let thumbImageHighlighted = #imageLiteral(resourceName: "SliderThumb-Highlighted")
+        slider.setThumbImage(thumbImageHighlighted, for: .highlighted)
+        
+        let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
         
         let trackLeftImage = #imageLiteral(resourceName: "SliderTrackLeft")
-        let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
         let trackLeftResizable = trackLeftImage.resizableImage(withCapInsets: insets)
-        slider.setMinimumTrackImage(trackLeftImage, for: .normal)
+        slider.setMinimumTrackImage(trackLeftResizable, for: .normal)
         
         let trackRightImage = #imageLiteral(resourceName: "SliderTrackRight")
         let trackRightResizable = trackRightImage.resizableImage(withCapInsets: insets)
-        slider.setMaximumTrackImage(trackRightImage, for: .normal)
+        slider.setMaximumTrackImage(trackRightResizable, for: .normal)
     }
     
     @IBAction func startNewGame() {
