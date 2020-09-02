@@ -51,10 +51,12 @@ class ViewController: UIViewController {
     
         let message = "You scored: \(points)"
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let action = UIAlertAction(title: "Awesome", style: .default, handler: nil)
+        let action = UIAlertAction(title: "Awesome", style: .default, handler:{
+            action in
+            self.startNewRound()
+        })
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
-        startNewRound()
     }
     
     @IBAction func sliderMoved(_ slider: UISlider) {
@@ -65,8 +67,8 @@ class ViewController: UIViewController {
     func startNewRound() {
         currentRound += 1
         targetValue = Int.random(in: 1...100)
-        //currentValue = 50
-        //slider.value = Float(currentValue)
+        currentValue = 50
+        slider.value = Float(currentValue)
         updateLabels()
     }
     
