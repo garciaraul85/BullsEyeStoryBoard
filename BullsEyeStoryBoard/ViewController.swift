@@ -27,6 +27,24 @@ class ViewController: UIViewController {
         let roundedValue = slider.value.rounded()
         currentValue = Int(roundedValue)
         startNewGame()
+        
+        // Customizr slider
+        //let thumbImage = UIImage(named: "SliderThumb-Normal")
+        // type image literal, hit enter and double click icon to choose image
+        let thumbImage = #imageLiteral(resourceName: "SliderThumb-Normal")
+        slider.setThumbImage(thumbImage, for: .normal)
+        
+        let thumbImageHighlited = #imageLiteral(resourceName: "SliderThumb-Highlighted")
+        slider.setThumbImage(thumbImageHighlited, for: .highlighted)
+        
+        let trackLeftImage = #imageLiteral(resourceName: "SliderTrackLeft")
+        let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
+        let trackLeftResizable = trackLeftImage.resizableImage(withCapInsets: insets)
+        slider.setMinimumTrackImage(trackLeftImage, for: .normal)
+        
+        let trackRightImage = #imageLiteral(resourceName: "SliderTrackRight")
+        let trackRightResizable = trackRightImage.resizableImage(withCapInsets: insets)
+        slider.setMaximumTrackImage(trackRightImage, for: .normal)
     }
 
     @IBAction func showAlert() {
